@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OCR Gambar ke Teks</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🖼️ Ekstrak Teks dari Gambar</h1>
+
+    <input type="file" id="imageInput" accept="image/*" />
+    <div id="previewContainer">
+      <img id="imagePreview" src="#" alt="Preview" hidden>
+    </div>
+    
+    <button onclick="performOCR()">Ekstrak Teks</button>
+    
+    <textarea id="resultText" placeholder="Hasil teks akan tampil di sini..." readonly></textarea>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
